@@ -1,0 +1,67 @@
+div {
+	color: red;
+}
+
+span {
+	color: orchid;
+}
+
+p span {
+	color: saddlebrown;
+}
+
+.text-just-selector {
+	color: blue;
+}
+p.text-just-selector {
+	color: green;
+}
+
+span.text-just-selector {
+	color: rgb(128, 126, 0);
+}
+#god-id {
+	color: orange;
+}
+/* _______________________________________________ */
+.both-selector {
+	color: red;
+}
+
+.selector-1 {
+	color: palegreen;
+}
+.selector-2 {
+	color: palevioletred;
+}
+
+.selector-1.selector-2 {
+	color: purple;
+}
+/* _______________________________________________ */
+.text-first-enumeration,
+.text-second-enumeration {
+	color: cadetblue;
+	font-size: 20px;
+}
+
+[class*="-enumeration"] {
+	color: darkblue;
+}
+
+/* _______________________________________________ */
+.nesting > p {
+	color: burlywood;
+}
+
+.nesting-level {
+	color: coral;
+}
+
+.nesting-level-text + p {
+	color: darkgreen;
+}
+
+.nesting-level-text ~ p {
+	color: darkslategray;
+}
