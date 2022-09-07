@@ -1,0 +1,66 @@
+@import "null.css";
+
+
+/* Клас */
+.text{
+	color: brown;
+}
+
+/* Тег */
+p{
+	/* color: aqua; */
+}
+
+span{
+	color: chartreuse;
+}
+
+/* 2 класа */
+/* 1) block1 та block2 через кому приоритетність у нижчого класа (буде зеленим)
+	2)  block1 та block2 без пробілу приоритетність їхного кольору (помаранчевий) */
+.block1.block2{
+	color: chocolate;
+}
+.block1{
+	color: blue;
+}
+.block2{
+	color: rgb(23, 128, 9);
+} 
+
+/* вкладеність, клас contenttext у класі content*/
+.content .contenttext{
+	color: darkmagenta;
+}
+
+
+/* тег у класі */
+.classteg span{
+	color: cadetblue;
+}
+
+/* Вкладенність, тільки р першого рівня змінюють колір */
+.stage1 > p{
+	color: crimson;
+}
+
+/* Вкладенність, тільки перший наступний обєкт того ж рівня змінює колір*/
+.stage2 + *{
+	color: darkgoldenrod;
+}
+
+
+/* Вкладенність, тільки перший наступний span того ж рівня змінює колір*/
+.stage3 + span{
+	color: rgb(224, 123, 203);
+}
+
+/* Вкладенність, всіх наступних обєктів того ж рівня змінює колір*/
+.stage4 ~ *{
+	color: rgb(52, 80, 85);
+}
+
+/* Вкладенність, всіх наступних обєктів div того ж рівня змінює колір*/
+.stage5 ~ div{
+	color: rgb(221, 0, 0);
+}
